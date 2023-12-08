@@ -1,0 +1,260 @@
+{"intents":
+[
+  {
+    "tag": "greeting",
+    "patterns": ["Greetings","Hello","Hi","Is anyone there?","Hey"],
+    "responses":
+    [
+        "Hello! I'm your beauty advisor chatbot. How can I assist you today?",
+        "Welcome! I'm here to provide cosmetic advice. How can I help?",
+        "Hi! What can I do for you today?",
+        "Greetings! How can I assist you with your lipstick questions?"
+    ],
+    "context": [""]
+  },
+
+  {
+    "tag": "farewell",
+    "patterns": ["Bye","Bye for now","See you later","Goodbye","See you soon"],
+    "responses":
+    [
+        "See you later! Thanks for visiting",
+        "Goodbye for now! Don't hesitate to return if you have more questions.",
+        "See you later! Have a wonderful day!",
+        "Farewell! If you ever need more advice, feel free to come back."
+    ],
+    "context": [""]
+  },
+
+  {
+    "tag": "thanks",
+    "patterns": ["Thanks","Thank you","That's helpful","Thank you very much"],
+    "responses":
+    [
+        "You're welcome! If you have more questions, don't hesitate to ask.",
+        "It was my pleasure to assist you. Feel free to return anytime!",
+        "Thank you for your kind words. I'm here to help whenever you need."
+    ],
+    "context": [""]
+  },
+
+  {
+    "tag": "opening_hours",
+    "patterns":
+    [
+      "What are your opening hours?",
+      "When do you open?",
+      "What time do you open?",
+      "Hours of operation"
+    ],
+    "responses":
+    [
+      "Our opening hours are from 8 AM to 10 PM, Monday to Saturday. We are closed on Sundays.",
+      "We are open from 8 AM to 10 PM on weekdays. We are closed on Sundays."
+    ],
+    "context": []
+  },
+
+  {
+    "tag": "payment",
+    "patterns":
+    [
+      "How can I make a payment?",
+      "What payment methods do you accept?",
+      "Payment options",
+      "Can I pay with a credit card?"
+    ],
+    "responses":
+    [
+      "We offer various payment methods for your convenience. You can make a payment using credit or debit cards, as well as through online payment gateways. If you have any specific questions about the payment process, please let us know.",
+      "We accept multiple payment options, including credit cards, debit cards, and secure online payment methods. If you have any concerns about payment, feel free to ask."
+    ],
+    "context": ["payment, credit, card"]
+  },
+
+  {
+    "tag": "noanswer",
+    "patterns": [""],
+    "responses":
+    [
+      "Sorry, I can't understand you",
+      "Please give me more information",
+      "Not sure I understand that"
+    ],
+    "context": []
+  },
+
+  {
+    "tag": "online_shopping_process",
+    "patterns":
+    [
+      "How do I buy lipstick online?",
+      "What is the online shopping process?",
+      "Guide to online shopping",
+      "How to order lipstick online?"
+    ],
+    "responses":
+    [
+      "Our online shopping process is simple and convenient. Here are the steps:\n1. Choose your favorite lipstick shade.\n2. Add it to your cart.\n3. Select your payment method.\n4. Provide your name, address, and phone number.\n5. Apply any discount codes if you have them.\n6. Review and confirm your information.\n7. Proceed with the payment, and you'll receive order tracking details for delivery."
+    ],
+    "context": []
+  },
+
+  {
+    "tag": "brand_recommendation",
+    "patterns":
+    [
+      "Can you recommend some popular lipstick brands?",
+      "Tell me about top lipstick brands",
+      "Recommend me a reputable lipstick brand",
+      "What are the best lipstick brands?"
+    ],
+    "responses":
+    [
+      "Certainly! We carry a variety of well-known lipstick brands, including MAC, NARS, and Urban Decay. These brands are renowned for their quality and extensive shade range. Is there a specific brand you'd like to know more about, or do you have any other questions about our products?"
+    ],
+    "context": ["brand, brands"]
+  },
+
+
+  {
+    "tag": "skin_tone_recognition",
+    "patterns":
+    [
+      "How to determine my skin tone?",
+      "Identify my skin tone",
+      "What's my skin tone?"
+    ],
+    "responses":
+    [
+      "Determining your skin tone is important for selecting the right makeup, including lipstick shades. Here's a simple method to identify your skin tone:\n\n1. Natural Light Test: Stand in natural daylight and look at the veins on your wrist. If they appear bluish, you likely have cool undertones. If they appear greenish, you likely have warm undertones.\n2. Jewelry Test: Consider which type of jewelry looks better on you. Silver jewelry may complement cool undertones, while gold jewelry may look better on warm undertones.\n3. White Cloth Test: Hold a white cloth near your face. If your complexion looks more vibrant and healthy against pure white, you may have cool undertones. If it looks better against off-white or cream, you may have warm undertones.\n\nUnderstanding your skin tone will help you make informed choices for your makeup. If you have questions about specific lipstick shades for your skin tone, feel free to ask."
+    ],
+    "context": ["skin_tone"]
+  },
+
+
+  {
+    "tag": "lipstick_color_advice",
+    "patterns":
+    [
+      "Recommend a lipstick shade for my skin tone",
+      "What lipstick color suits my complexion?",
+      "Help me choose a lip color for my skin tone"
+    ],
+    "responses":
+    [
+      "Choosing the right lipstick shade for your skin tone is essential. Here are some general guidelines:\n\n1. Fair Skin: Light pinks, soft corals, and nude shades work well.\n2. Medium Skin: Rose, berry, and warm reds complement your complexion.\n3. Olive Skin: Try rich, earthy tones like terracotta and deep mauves.\n4. Dark Skin: Deep plums, bold reds, and vibrant shades can look stunning on you.\n\nKeep in mind that personal preference also plays a significant role in choosing lip colors. Would you like more specific recommendations based on your skin tone or any particular shade you're interested in?"
+    ],
+    "context": ["skin_tone"]
+  },
+
+  {
+    "tag": "lipstick_color_personalization",
+    "patterns":
+    [
+      "Help me choose a lipstick color that suits my style",
+      "Recommend a lipstick color based on my personality",
+      "Suggest a lipstick shade for my fashion sense"
+    ],
+    "responses":
+    [
+      "Absolutely, I'd love to help you find a lipstick shade that matches your personality and style. Here are some suggestions:\n\n1. Bold and Confident: Try vibrant reds or deep plums for a statement look.\n2. Romantic and Elegant: Soft pinks and rose shades may complement your style.\n3. Trendy and Adventurous: Experiment with unique shades like metallics or bold purples.\n4. Classic and Timeless: Neutral nudes and elegant mauves can enhance your timeless style.\n\nYour personal style plays a significant role in selecting the perfect lipstick color. Feel free to share more about your style, and I can offer more tailored recommendations."
+    ],
+    "context": ["style, lipstick"]
+  },
+
+  {
+    "tag": "popular_lipstick_colors",
+    "patterns":
+    [
+      "Suggest popular lipstick colors",
+      "What are the most loved lip shades?",
+      "Recommend widely favored lip colors"
+    ],
+    "responses":
+    [
+      "Certainly! Here are some lipstick colors that are widely loved and popular among many:\n\n1. Classic Red: A timeless and bold choice for any occasion.\n2. Nude Pink: Versatile and flattering, perfect for everyday wear.\n3. Mauve: A subtle and elegant option that suits a variety of skin tones.\n4. Berry: Adds a touch of drama and charm.\n5. Coral: A vibrant choice for a pop of color.\n\nThese shades are classic favorites and often well-received. If you have a specific color in mind or need more recommendations, feel free to ask."
+    ],
+    "context": []
+  },
+
+  {
+    "tag": "lipstick_application_tips",
+    "patterns":
+    [
+      "How to apply lipstick for long-lasting color?",
+      "Tips for keeping lipstick color fresh",
+      "Proper lipstick application for color longevity"
+    ],
+    "responses":
+    [
+      "Applying lipstick correctly can help maintain the color for longer. Here are some tips for long-lasting lipstick:\n\n1. Exfoliate: Start with smooth, hydrated lips by exfoliating and moisturizing before applying lipstick.\n2. Lip Liner: Use a lip liner to outline your lips and prevent color bleeding.\n3. Apply Thin Layers: Build up color with thin layers for even coverage.\n4. Blot and Set: After applying, blot with tissue and set with translucent powder for extra staying power.\n5. Touch Up: Keep your lipstick and a small brush for touch-ups throughout the day.\n6. Avoid Overuse: Avoid excessive rubbing or touching your lips.\n\nThese tips will help you enjoy your lipstick's color for an extended period. If you have more questions or need specific advice, feel free to ask."
+    ],
+    "context": []
+  },
+
+  {
+    "tag": "lipstick_type_advice",
+    "patterns":
+    [
+      "Tell me about different types of lipsticks",
+      "Recommend lipstick types",
+      "Advise on lipstick textures"
+    ],
+    "responses":
+    [
+      "Certainly! Lipsticks come in various types, each with unique characteristics. Here are some common lipstick types:\n\n1. Lip Gloss (Son Bóng): Provides a shiny, glossy finish for a lustrous look.\n2. Matte Lipstick (Son Lì): Offers a velvety, non-shiny finish with long-lasting color.\n3. Cream Lipstick (Son Kem): Delivers a creamy texture with moisturizing properties.\n4. Liquid Lipstick (Son Lỏng): Provides precision and intense color payoff in a liquid form.\n5. Sheer Lipstick (Son Mờ): Offers a translucent and subtle color for a natural look.\n\nThe choice of lipstick type depends on your desired finish and comfort. Lip gloss provides shine, matte lipsticks offer a bold look, cream lipsticks provide moisture, liquid lipsticks offer precision, and sheer lipsticks create a natural appearance. Do you have any specific questions about a particular type or need recommendations for a specific occasion?"
+    ],
+    "context": []
+  },
+
+  {
+    "tag": "delivery_time_inquiry",
+    "patterns":
+    [
+      "How long does delivery take?",
+      "What's the delivery time?",
+      "When will my order arrive?"
+    ],
+    "responses":
+    [
+      "The delivery time may vary depending on your location and the shipping method. Typically, our standard delivery takes 3-5 days for domestic orders and 7-15 days for international orders. However, please note that delivery times can change due to factors like holidays or unforeseen circumstances.\n\nTo get a more accurate estimate for your order, please provide your shipping address and any specific shipping preferences, and we'll do our best to give you the most up-to-date delivery information."
+    ],
+    "context": []
+  },
+
+  {
+    "tag": "remove_lipstick",
+    "patterns":
+    [
+      "How to properly remove lipstick?",
+      "Lip care and makeup removal tips",
+      "What's the best way to take off lipstick?"
+    ],
+    "responses":
+    [
+      "Properly removing lipstick and caring for your lips is essential. Here are some lip care and makeup removal tips:\n\n1. Use a Lip Balm: Apply a lip balm or oil-based makeup remover to your lips before removal to help break down the color and moisturize your lips.\n2. Gently Wipe: Use a soft cloth or cotton pad to gently wipe away the lipstick. Avoid scrubbing or rubbing, as it can irritate your lips.\n3. Avoid Harsh Chemicals: Try to use a gentle, alcohol-free makeup remover to avoid drying out your lips.\n4. Exfoliate: Exfoliate your lips once a week to remove dead skin cells and keep your lips smooth.\n5. Hydrate: After removing lipstick, apply a hydrating lip balm or oil to keep your lips moisturized.\n6. Nighttime Lip Care: Don't forget to moisturize your lips before bedtime for overnight hydration.\n\nFollowing these steps will help you remove lipstick without harming your lips and maintain soft, beautiful lips. If you have more questions or need specific product recommendations, feel free to ask."
+    ],
+    "context": []
+  },
+
+  {
+    "tag": "lipstick_purchase_assistance",
+    "patterns": ["I want to buy lipstick", "I'm looking for lipstick", "Can you help me choose a lipstick?"],
+    "responses": ["Of course, I'd be happy to assist you in finding the perfect lipstick. Have you already chosen a specific shade or type of lipstick you're interested in? If you have any preferences or need recommendations, please let me know, and I'll provide you with the best options to match your style and preferences."],
+    "context": []
+  },
+
+  {
+    "tag": "order_information_request",
+    "patterns": ["I'd like to place an order", "How can I order?", "What details do you need for my order?"],
+    "responses": ["Certainly, we can assist you with your order. To proceed, we'll need some essential information to ensure a smooth process. Please provide the following details:\n\n1. Your Full Name:\n2. Delivery Address:\n3. Contact Phone Number:\n4. Email Address (optional):\n5. The Product(s) You'd Like to Order:\n6. Quantity of Each Product:\n7. Any Special Requests or Preferences:\n\nYour information will be kept secure and only used for processing your order. Once you provide these details, we'll help you complete your purchase. How can we assist you further?"],
+    "context": ["order_information"]
+  }
+
+
+
+]
+}
+
+
